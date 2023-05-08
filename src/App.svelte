@@ -1,47 +1,73 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import Navigation from "./components/Navigation.svelte";
 </script>
 
 <main>
+  <div class="top">
+    <h1>JStoner Project Manager</h1>
+    <p>
+      Purpose: I want to have some simple automation around my (currently
+      manual) process for managing projects...
+    </p>
+  </div>
+  <Navigation />
+  <!-- <Todos /> -->
+
+  <!-- <div>
+    <h2>Actions</h2>
+    <ul>
+      <li>View Documentation</li>
+      <hr />
+      <li>Create new Idea</li>
+      <li>List existing Ideas</li>
+      <!- - <li>View existing Idea</li> - ->
+      <li>Revise (view/edit) existing Idea</li>
+      <!- - <li>Move idea (Discarded, Backlog, Queued)</li> - ->
+      <li>Discard (archive) Idea</li>
+      <li>Queue (mark as ready) Idea</li>
+      <hr />
+      <li>Prioritize queued Ideas</li>
+      <li>Promote to Current (active ideas are limited)</li>
+      <hr />
+      <li>...</li>
+    </ul>
+  </div> -->
+
+  <!-- <div>
+    <h2>Current Categories</h2>
+    <ol>
+      <li><h3>Discarded</h3></li>
+      <li>
+        <h3>Initial</h3>
+        <ol>
+          <li>
+            <Idea title="Example Title" description="Example description..." />
+          </li>
+        </ol>
+      </li>
+      <li><h3>Queued</h3></li>
+      <li><h3>Current</h3></li>
+      <li><h3>On-Hold</h3></li>
+      <li><h3>Deployed</h3></li>
+    </ol>
+  </div>
+
   <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+    <h2>Template</h2>
+    <h3>Project Name</h3>
+    <ol>
+      <li>Goals</li>
+      <li>Idea</li>
+      <li>Repo</li>
+      <li>Scratch</li>
+      <li>Feedback</li>
+    </ol>
+  </div> -->
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
+  .top {
+    text-align: center;
+    font-style: italic;
   }
 </style>
